@@ -1,24 +1,34 @@
 import "./navbar.scss"
-
+import { motion } from "framer-motion";
+import SiderBar from "../sidebar/SiderBar";
 const Nabar = () => {
   return (
     <div className="navbar">
+      <SiderBar/>
       <div className="wrapper">
-        <span>Govind Prasad</span>
-        <div className="social">
-          <a href="#">
-            <img src="" alt="Facebook" />
-          </a>
-          <a href="#">
-            <img src="" alt="Instagram" />
-          </a>
+        <motion.span
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1>Govind Prasad</h1>
+        </motion.span>
+        <motion.div
+          className="social"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+           >
           <a href="https://www.linkedin.com/in/govind-prasad-439051207/">
-            <img src="" alt="LinkedInd" />
+            <img src="./linedin.png" alt="LinkedInd" />
           </a>
           <a href="https://github.com/govindjoshi9">
-            <img src="" alt="github " />
+            <img src="./github2.png" alt="github " />
           </a>
-        </div>
+          <a href="#">
+            <img src="./insta.png" alt="" />
+          </a>
+        </motion.div>
       </div>
     </div>
   );
