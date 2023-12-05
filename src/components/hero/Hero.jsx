@@ -55,12 +55,12 @@ const Hero = () => {
             <motion.button variants={testVriant}>Resume</motion.button>
             <motion.button variants={testVriant}>Contact as</motion.button>
           </motion.div>
-          <motion.img variants={testVriant} animate="scrollB utton" src="/scroll.png" alt="" />
+          <motion.img variants={testVriant} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
         <motion.div className="slidingText" variants={SliderVriant } initial="initial" animate="animate">MERN Stack Developer</motion.div>
       </div>
       <div className="imageContainer">
-        <img src="/coder1.jpg" alt="" />
+        {/* <img src="/hero2.png" alt="" /> */}
       </div>
     </div>
   );
