@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=bhagavan_a:mailto:bhagavan@metapointer.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=joshigovin
+ d740@gmail.com:mailto:joshigovind740@gmail.com
+DESCRIPTION;LANGUAGE=en-US:\n\n\n__________________________________________
+ ______________________________________\nMicrosoft Teams meeting\nJoin on y
+ our computer\, mobile app or room device\nClick here to join the meeting<h
+ ttps://teams.microsoft.com/l/meetup-join/19%3ameeting_YThiNTU1ZGYtMmJlOS00
+ ZTA4LWE0MTctN2QyMjMzMTlhMGU1%40thread.v2/0?context=%7b%22Tid%22%3a%22688f3
+ d8b-0609-4f1a-8022-dbdf23b4c072%22%2c%22Oid%22%3a%2220749894-19c0-45ba-bc1
+ 5-93ce7c15cc69%22%7d>\nMeeting ID: 460 505 914 192\nPasscode: GAg3rr\nDown
+ load Teams<https://www.microsoft.com/en-us/microsoft-teams/download-app> |
+  Join on the web<https://www.microsoft.com/microsoft-teams/join-a-meeting>
+ \nLearn More<https://aka.ms/JoinTeamsMeeting> | Meeting options<https://te
+ ams.microsoft.com/meetingOptions/?organizerId=20749894-19c0-45ba-bc15-93ce
+ 7c15cc69&tenantId=688f3d8b-0609-4f1a-8022-dbdf23b4c072&threadId=19_meeting
+ _YThiNTU1ZGYtMmJlOS00ZTA4LWE0MTctN2QyMjMzMTlhMGU1@thread.v2&messageId=0&la
+ nguage=en-US>\n___________________________________________________________
+ _____________________\n
+UID:040000008200E00074C5B7101A82E00800000000253D56987127DA01000000000000000
+ 010000000EC93C74B1DAD7048B7B5ABB353C4D981
+SUMMARY;LANGUAGE=en-US:First round interview with Govind Prasad
+DTSTART;TZID=India Standard Time:20231206T110000
+DTEND;TZID=India Standard Time:20231206T120000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20231205T115301Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2122066469
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_YThiNTU1ZGYtMmJlOS00ZTA4LWE0MTctN2QyMjMzMTlhMGU1%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22688f3d8b-0609-4f1a-8022-dbdf23b4c072%22%2c%22O
+ id%22%3a%2220749894-19c0-45ba-bc15-93ce7c15cc69%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/688f3d8b-0609-4f1a-8022-dbdf23b4c072/20749894-19c0-45ba-bc15-9
+ 3ce7c15cc69/19_meeting_YThiNTU1ZGYtMmJlOS00ZTA4LWE0MTctN2QyMjMzMTlhMGU1@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_YThiNTU1ZGYtMmJlOS00ZTA
+ 4LWE0MTctN2QyMjMzMTlhMGU1@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0\,"ct":null\,"btid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
