@@ -1,3 +1,4 @@
+@import '../../app.scss';
 .sidebar{
     
     display: flex;
@@ -17,6 +18,9 @@
         bottom: 0;
         width: 400px;
         background: white;
+        @include mobile{
+        width: 200px;
+    } 
          
 
 
@@ -32,7 +36,10 @@
 
             a{
                 font-size: 40px;
-                 
+
+                 @include mobile{
+                 font-size: 20px;
+    }
             }
 
         }

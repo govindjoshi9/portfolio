@@ -11,7 +11,7 @@ const Nabar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h1>Govind Prasad</h1>
+          {/* <h1>Govind Prasad</h1> */}
         </motion.span>
         <motion.div
           className="social"
