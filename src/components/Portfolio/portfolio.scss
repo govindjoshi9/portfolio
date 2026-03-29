@@ -1,4 +1,5 @@
-@import '../../app.scss';
+@import '../../app.css';
+
 .portfilio {
   position: relative;
 
@@ -11,11 +12,12 @@
     color: orange;
     font-size: 36px;
   }
+
   .progressBar {
     height: 10px;
     background-color: white;
   }
-  
+
   .container {
     display: flex;
     align-items: center;
@@ -23,7 +25,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
+
     .wrapper {
       min-width: 1366px;
       height: 100%;
@@ -32,45 +34,48 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
-      
-      
-      .imageContainer{
+
+
+      .imageContainer {
         flex: 1;
         height: 50%;
-        
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
-    }
+      }
 
-    .textContainer {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      h2{
-        font-size: 50px;
-        
-      }
-      p{
-        color: gray;
-        font-size: 15px;
-        width: 50%;
-        
-      }
-      button{
-        background-color: orange;
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        width: 200px;
-        cursor: pointer;
-        
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+          font-size: 50px;
+
+        }
+
+        p {
+          color: gray;
+          font-size: 15px;
+          width: 50%;
+
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+
+        }
       }
     }
   }
-}
 
 }
