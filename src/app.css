@@ -1,40 +1,46 @@
 @import "tailwindcss";
-/* html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body{
-    background-color: #0c0c1d;
-    color: lightgray;
+
+@theme {
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7c3aed;
+  
+  --color-background: #0f0f13;
+  --color-card: #1a1a24;
+  --color-foreground: #f8fafc;
+  --color-muted: #94a3b8;
+  
+  --font-sans: "Inter", sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-section{
-    height: 100vh;
-    scroll-snap-align: center;
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
-@mixin mobile {
-    @media (max-width:738px) {
-        @content;
-    }
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
-@mixin tablet {
-    @media (max-width:1024px) {
-        @content;
-    }
+
+section {
+  min-height: 100vh;
+  position: relative;
 }
-@mixin desktop {
-    @media (max-width:1366px) {
-        @content;
-    }
-} */
+
+/* Premium smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-500);
+}
