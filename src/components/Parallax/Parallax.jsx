@@ -1,5 +1,5 @@
 import {motion, useScroll, useTransform} from 'framer-motion'
-import "./parallax.scss"
+// import "./parallax.scss"
 import { useRef } from 'react';
 
 

@@ -1,4 +1,4 @@
-import "./app.css"
+import "./app.css";
 import Nabar from "./components/Navbar/Nabar";
 import Parallax from "./components/Parallax/Parallax";
 import Portflio from "./components/Portfolio/Portflio";
@@ -10,30 +10,24 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </>
-    // <div>
-    //   <Cursor />
-    //   <section id="Homepage">
-    //     <Nabar />
-    //     <Hero />
-    //   </section>
-    //   <section id="Services">
-    //     <Parallax type="services" />
-    //   </section>
-    //    <section><Services/></section>
-    //   <section id="Portfolio">
-    //     <Parallax type="portfolio" />
-    //   </section>
-    //   <Portflio/ >
-    //   <section id="Contact"><Contact /></section> 
-    //   <SpeedInsights/>
-    //   {/* <Test></Test> */}
-    // </div>
+    <div className="bg-background text-foreground min-h-screen selection:bg-primary-500/30">
+      <Cursor />
+      <section id="Homepage">
+        <Nabar />
+        <Hero />
+      </section>
+      <section id="Services" className="relative z-10">
+        <Services />
+      </section>
+      <section id="Portfolio" className="relative z-10">
+        <Portflio />
+      </section>
+      <section id="Contact" className="relative z-10">
+        <Contact />
+      </section> 
+      <SpeedInsights/>
+    </div>
   );
 }
 
-export default App
+export default App;
