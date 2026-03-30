@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ThreeScene from "./ThreeScene";
 
 const textVariants = {
   initial: { x: -50, opacity: 0 },
@@ -19,7 +20,8 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-background">
+      <ThreeScene />
       {/* Background glow effects */}
       <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary-600/30 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
