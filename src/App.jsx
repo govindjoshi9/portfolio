@@ -2,7 +2,7 @@ import "./app.css";
 import Nabar from "./components/Navbar/Nabar";
 import Parallax from "./components/Parallax/Parallax";
 import Portflio from "./components/Portfolio/Portflio";
-import Services from "./components/Services/Services";
+import Experience from "./components/Experience/Experience";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
@@ -16,8 +16,8 @@ const App = () => {
         <Nabar />
         <Hero />
       </section>
-      <section id="Services" className="relative z-10">
-        <Services />
+      <section id="Experience" className="relative z-10">
+        <Experience />
       </section>
       <section id="Portfolio" className="relative z-10">
         <Portflio />
