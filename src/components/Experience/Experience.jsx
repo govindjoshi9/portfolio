@@ -96,13 +96,13 @@ const Experience = () => {
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Timeline */}
-        <div className="lg:col-span-8 timeline-container relative border-l border-white/10 pl-8 md:pl-12 ml-4">
+        <div className="lg:col-span-8 timeline-container relative border-l border-white/10 pl-6 md:pl-12 ml-2 md:ml-4">
           <div className="absolute top-0 left-[-1px] w-[2px] h-full bg-gradient-to-b from-primary-500 via-purple-500 to-transparent"></div>
           
           {experiences.map((exp, i) => (
             <div key={i} className="timeline-item mb-16 relative">
               {/* Dot */}
-              <div className="absolute top-2 -left-[45px] md:-left-[61px] w-6 h-6 rounded-full bg-background border-4 border-primary-500 z-10 shadow-[0_0_15px_rgba(124,58,237,0.5)]"></div>
+              <div className="absolute top-2 -left-[35px] md:-left-[61px] w-6 h-6 rounded-full bg-background border-4 border-primary-500 z-10 shadow-[0_0_15px_rgba(124,58,237,0.5)]"></div>
               
               <div className="bg-card/50 backdrop-blur-md rounded-2xl p-8 border border-white/5 hover:border-primary-500/30 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">

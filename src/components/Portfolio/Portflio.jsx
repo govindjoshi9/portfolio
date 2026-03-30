@@ -43,13 +43,14 @@ const Single = ({ item }) => {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+  const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.5]);
 
   return (
-    <section className="h-screen w-full flex items-center justify-center snap-center relative overflow-hidden">
+    <section className="min-h-screen w-full flex items-center justify-center py-20 relative">
       <div className="container mx-auto px-4 md:px-8 h-full flex items-center justify-center">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full max-w-7xl h-full">
-          <div className="flex-1 w-full relative h-[45vh] lg:h-[65vh] rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10" ref={ref}>
+          <div className="flex-1 w-full relative h-[35vh] md:h-[45vh] lg:h-[65vh] rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10" ref={ref}>
             <div className="absolute inset-0 bg-primary-500/20 mix-blend-overlay group-hover:bg-transparent transition-colors duration-500 z-10" />
             <img 
               src={item.img} 
@@ -60,7 +61,7 @@ const Single = ({ item }) => {
               }}
             />
           </div>
-          <motion.div className="flex-1 flex flex-col items-start gap-5 lg:pl-8 z-20" style={{ y }}>
+          <motion.div className="flex-1 flex flex-col items-start gap-4 lg:gap-5 lg:pl-8 z-20" style={{ y, opacity }}>
             <h2 className="text-3xl md:text-5xl font-black text-white">{item.title}</h2>
             <p className="text-muted text-base md:text-lg leading-relaxed">{item.desc}</p>
             {item.credentials && (
@@ -110,7 +111,7 @@ const Portflio = () => {
         />
       </div>
       
-      <div className="pb-[10vh]">
+      <div className="pb-10 flex flex-col gap-20">
         {items.map((item) => (
           <Single item={item} key={item.id} />
         ))}

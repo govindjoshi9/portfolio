@@ -41,7 +41,7 @@ const Hero = () => {
           </motion.h2>
           <motion.h1 
             variants={textVariants}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-2xl"
+            className="text-4xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-2xl"
           >
             Software <br className="hidden md:block" /> Developer
           </motion.h1>
